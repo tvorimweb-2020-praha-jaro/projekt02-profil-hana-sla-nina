@@ -13,7 +13,109 @@ html { box-sizing: border-box; }
  twitter    #1da1f2
 */
 
-
 body {
     background-color: #bdc3c7;
+    margin: 0;
+    padding: 0;
+    color: #bdc3c7;
+    font-size: 15px;
+    font-family: 'Source Sans Pro';
+    line-height: 1.35em; 
+}
+
+.profil {
+    background-color: #31363b;  
+    margin: 1rem auto 0 auto;
+    width: 260px;  
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hlavicka {
+    position: relative; /*vse uvnitr class hlavicka jsou jeji hodne deti = poslouchaji ji - hura!!!*/
+}
+
+.foto {
+    width: 100%; /*dite hlavicky - 100pro vuci hlavicce, ne vuci cele strance*/
+}
+
+.logo {
+    background-color: #b92e81;
+    border-radius: 50%;
+    position: absolute; /*tímhle se dá s logem v rámci hlavicky libovolne hýbat, neovlivni ostatni*/
+    right: 20px; /*nastavuju o kolik a kam hybu vuci rodici - absolute uvnitr relative!*/
+    bottom: -20px; /*i záporne hodnoty!!!*/
+    z-index: 1; /*vrstva v popredi*/
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.obsah {
+    margin: 0;
+    padding: 15px;  
+}
+
+.jmeno { 
+    margin: 20px 0 30px 0;
+    padding: 0;
+    font-family: 'Montserrat'; 
+    font-size: 25px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.odkazy {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.odkazy li {
+    display: inline-block; /*zruší odrážkoidní menu - z inline prvku li udela mix inline-block*/
+    border-top: #3f464d 2px solid;
+    text-align: center; /*zarovna se cele menu doprostred*/
+}
+
+.odkazy a {
+    display: block; /*display:block + padding u a (ne li) - vytvorim si vetsi ramecky, ktere jsou cele aktivni odkazy*/
+    padding: 15px; 
+    color: #bdc3c7;
+    text-decoration: none;
+    text-transform: uppercase; /*přehazuju upper/lower/kapitalky*/
+    font-family: 'Montserrat';
+    font-weight: bolder;
+}
+
+.portfolio {
+    width: 100%; /*100pro li vuci rodici (.odkazy ul) a odkaz je zase zavisly na prarodici (.profil 250px)*/
+}
+
+.facebook {
+    width: 50%;
+    border-right: #3f464d 2px solid;
+}
+
+.twitter {
+    width: 50%;
+}
+
+.odkazy a:hover,
+a:active,
+a:focus {
+    color: whitesmoke;
+}
+
+.portfolio a:hover,
+a:active,
+a:focus {
+    background-color: #e74c3c;
+}
+
+.facebook a:hover,
+a:active,
+a:focus {
+    background-color: #3b5998;
+}
+
+.twitter a:hover,
+a:active,
+a:focus {
+    background-color: #1da1f2;
 }
