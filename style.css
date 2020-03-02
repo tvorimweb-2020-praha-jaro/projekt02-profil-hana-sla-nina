@@ -19,7 +19,7 @@ body {
     padding: 0;
     color: #bdc3c7;
     font-size: 15px;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.35em; 
 }
 
@@ -79,7 +79,7 @@ body {
     color: #bdc3c7;
     text-decoration: none;
     text-transform: uppercase; /*přehazuju upper/lower/kapitalky*/
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
 
